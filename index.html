@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CheckPoint: informativa sulla privacy</title>
-<meta name="description" content="Informativa sulla privacy dell'app CheckPoint per Android: nessun dato raccolto, tutto resta sul telefono.">
+<title>CheckPoint Patrimonio: informativa sulla privacy</title>
+<meta name="description" content="Informativa sulla privacy dell'app CheckPoint Patrimonio per Android: nessun dato raccolto, i dati restano sul telefono e nelle copie che crei tu.">
 <style>
   :root { --bg:#fff; --fg:#1b1f24; --muted:#5b6672; --line:#d9dee4; --accent:#1f6f5b; }
   @media (prefers-color-scheme: dark) {
@@ -25,16 +25,16 @@
 </head>
 <body>
 <main>
-  <h1>CheckPoint: informativa sulla privacy</h1>
-  <p class="meta">App per Android · Ultimo aggiornamento: 13 ottobre 2026</p>
+  <h1>CheckPoint Patrimonio: informativa sulla privacy</h1>
+  <p class="meta">App per Android · Ultimo aggiornamento: 16 ottobre 2026</p>
 
   <div class="box">
     <p><strong>In breve</strong></p>
     <ul>
-      <li>CheckPoint <strong>non raccoglie, non invia e non condivide</strong> alcun dato.</li>
+      <li>CheckPoint Patrimonio <strong>non raccoglie, non invia e non condivide</strong> alcun dato.</li>
       <li>Non serve un account. Non ci sono pubblicità, statistiche d'uso, analisi degli arresti anomali né servizi di terze parti.</li>
       <li>L'app <strong>non usa Internet</strong>: non richiede nemmeno il permesso di accedere alla rete.</li>
-      <li>Tutto ciò che inserisci resta <strong>solo sul tuo telefono</strong>, nella memoria privata dell'app.</li>
+      <li>Tutto ciò che inserisci resta <strong>sul tuo telefono</strong>, nella memoria privata dell'app. L'unica copia che può esistere altrove è quella che crei tu: un file esportato, oppure il backup di Android nel tuo account Google, se l'hai attivo.</li>
     </ul>
   </div>
 
@@ -43,12 +43,14 @@
      Per domande sulla privacy: <a href="mailto:philips89.developer@gmail.com">philips89.developer@gmail.com</a>.</p>
 
   <h2>Quali dati conserva l'app, e dove</h2>
-  <p>Sul tuo dispositivo, e solo lì, l'app conserva:</p>
+  <p>Sul tuo dispositivo l'app conserva:</p>
   <ul>
-    <li>le <strong>fonti</strong> che crei (nome, tipo, descrizione facoltativa);</li>
+    <li>le <strong>fonti</strong> che crei (nome, tipo, se aumentano o riducono il patrimonio, descrizione facoltativa);</li>
+    <li>le <strong>Categorie fonti</strong>, quelle di partenza e quelle che crei (nome, icona e se aumentano o riducono il patrimonio);</li>
     <li>i <strong>checkpoint</strong>: data, importi per fonte, note facoltative;</li>
     <li>l'eventuale <strong>obiettivo</strong> di patrimonio;</li>
-    <li>le <strong>impostazioni</strong>: tema e se il blocco dell'app è attivo.</li>
+    <li>le <strong>categorie</strong> di entrata e di uscita (nome e icona) e i <strong>movimenti</strong>: data, importo, categoria, nota facoltativa; i <strong>movimenti ripetuti</strong> con la loro regola (ogni quanto e fino a quando), che l'app registra da sola sul telefono. Sono un registro personale che scrivi tu: l'app non si collega a banche, carte o conti e non legge SMS o notifiche;</li>
+    <li>le <strong>impostazioni</strong>: tema, se il blocco dell'app è attivo e se il promemoria del checkpoint è acceso.</li>
   </ul>
   <p>Lo sviluppatore non ha alcun accesso a questi dati: non esistono server di CheckPoint.</p>
 
@@ -59,9 +61,9 @@
 
   <h2>Backup ed esportazione</h2>
   <ul>
-    <li>Il backup automatico di Android (Google Drive) e il trasferimento tra dispositivi sono <strong>disattivati</strong> per questa app.</li>
+    <li><strong>Backup di Android.</strong> L'app non invia nulla a nessuno. Se sul telefono hai attivo il backup di Android, il sistema include il database di CheckPoint nel backup del <strong>tuo account Google</strong>, come fa per le altre app, e lo usa per riportare i dati su un telefono nuovo (anche con il trasferimento diretto da telefono a telefono). Se il telefono ha un blocco schermo, quel backup è cifrato con una chiave legata al tuo blocco schermo. Lo sviluppatore non ha accesso a questo backup. Puoi disattivarlo dalle impostazioni di Android (<em>Impostazioni → Google → Backup</em>; il percorso può cambiare secondo il telefono). Nel backup entra solo il database dell'app, non i file che esporti.</li>
     <li>Puoi esportare i dati quando vuoi da <em>Impostazioni → Backup e dati</em>: un file JSON, facoltativamente
-        <strong>cifrato con una passphrase</strong> scelta da te (AES-256-GCM), oppure lo storico in CSV. Il file viene
+        <strong>cifrato con una passphrase</strong> scelta da te (AES-256-GCM), oppure lo storico dei checkpoint e i movimenti in CSV o in PDF. Il file viene
         consegnato al pannello di condivisione di Android: sei tu a decidere dove salvarlo o a chi inviarlo. Da quel
         momento il file è sotto la tua responsabilità e segue le regole del servizio che scegli (per esempio Google Drive o la posta elettronica).</li>
     <li>Un backup non cifrato è leggibile da chiunque lo ottenga.</li>
@@ -73,12 +75,17 @@
     <li>Dall'app: <em>Impostazioni → Backup e dati → Cancella tutti i dati</em>.</li>
     <li>Da Android: <em>Impostazioni → App → CheckPoint → Spazio di archiviazione → Cancella dati</em>, oppure disinstalla l'app.</li>
   </ul>
-  <p>La cancellazione è definitiva: lo sviluppatore non ha copie.</p>
+  <p>La cancellazione è definitiva: lo sviluppatore non ha copie. Restano solo le copie che hai creato tu: i file esportati e, se attivo, il backup di Android nel tuo account Google (si gestisce da <em>Impostazioni → Google → Backup</em> o dall'app Google One).</p>
 
   <h2>Permessi</h2>
-  <p>L'app non chiede permessi da concedere. Il sistema registra soltanto il permesso "normale" per usare lo sblocco
-     biometrico (<code>USE_BIOMETRIC</code>), concesso automaticamente da Android. L'app non ha accesso a contatti,
-     posizione, fotocamera, microfono o file del telefono.</p>
+  <p><strong>Notifiche</strong> (<code>POST_NOTIFICATIONS</code>, Android 13 e successivi): chiesto solo se accendi il promemoria
+     del checkpoint (<em>Impostazioni → Promemoria checkpoint</em>). Il promemoria è una notifica locale, programmata sul telefono
+     dall'app: nessun server e nessun servizio di notifiche lo invia, e il testo non contiene importi né altri dati. Puoi negarlo o
+     revocarlo in qualsiasi momento: l'app funziona lo stesso, senza promemoria.</p>
+  <p>Il sistema registra inoltre alcuni permessi "normali", concessi automaticamente da Android: <code>USE_BIOMETRIC</code> (e, per
+     le versioni di Android meno recenti, <code>USE_FINGERPRINT</code>) per lo sblocco con impronta o volto;
+     <code>RECEIVE_BOOT_COMPLETED</code> e <code>WAKE_LOCK</code> per riprogrammare i promemoria dopo un riavvio del telefono.
+     L'app non ha accesso a Internet, contatti, posizione, fotocamera, microfono o file del telefono.</p>
 
   <h2>Minori</h2>
   <p>CheckPoint è pensata per adulti (18 anni o più) e non raccoglie dati di alcuna persona.</p>
